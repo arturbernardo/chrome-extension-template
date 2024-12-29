@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Simple Template",
+    "version": "1.0",
+    "description": "Extension simple template using chrome messaging",
+    "permissions": [
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "brick.png",
+            "48": "brick.png",
+            "128": "brick.png"
+        }
+    }
+}
